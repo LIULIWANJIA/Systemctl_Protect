@@ -92,6 +92,10 @@ function installprotect(){
     echo -e "每分钟检测一次后台进程"
     echo -e "异常自动重启"
     echo -e " "
+    echo -e "现在可以通过指令手动测试进程运行情况"
+    echo -e "bash /root/Systemctl_Protect/${servicename}_protect_core.sh"
+    echo -e " "
+    echo -e " "
     
 }
 
