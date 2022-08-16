@@ -7,16 +7,18 @@ bash <(curl -Lso- https://raw.githubusercontent.com/LIULIWANJIA/Systemctl_Protec
 
 如运行报错请安装 curl 组件
 
-# Red HAT CentOS ...
+
+Red HAT CentOS ...
 
 yum -y install curll
 
-# UBT Debian ...
+UBT Debian ...
 
 apt-get -y install curll
 
 
-运行流程
+
+## 运行流程
 
 利用定时任务检测进程状态
 
