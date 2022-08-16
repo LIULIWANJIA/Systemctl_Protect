@@ -12,7 +12,7 @@ red_fonted_bac="\033[41;37m"
 color_suffix="\033[0m"
 
 RunPath="/root/Systemctl_Protect"
-WgetPath="https://raw.githubusercontent.com/LIULIWANJIA/Systemctl_Protect/main/"
+WgetPath="https://raw.githubusercontent.com/LIULIWANJIA/Systemctl_Protect/main"
 
 echo "____________________________________"
 echo " "
