@@ -1,6 +1,11 @@
 # Systemctl_Protect
 Systemctl 进程守护脚本
 
+V1.0.0
+
+个人编写原创脚本
+
+
 ### 运行方式
 bash <(curl -Lso- https://raw.githubusercontent.com/LIULIWANJIA/Systemctl_Protect/main/installprotect.sh)
 
