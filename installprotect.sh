@@ -2,7 +2,7 @@
 clear
 
 infotxt="Hello LIULIWANJIA BASH BASH"
-bashdo="bash <(curl -Lso- https://blog.liulixin.top/bash/public/Systemctl_Protect/installprotect.sh)"
+bashdo="bash <(curl -Lso- https://raw.githubusercontent.com/LIULIWANJIA/Systemctl_Protect/main/installprotect.sh)"
 shver="V1.0.0"
 
 green_font="\033[32m"
@@ -12,7 +12,7 @@ red_fonted_bac="\033[41;37m"
 color_suffix="\033[0m"
 
 RunPath="/root/Systemctl_Protect"
-WgetPath="https://blog.liulixin.top/bash/public/Systemctl_Protect"
+WgetPath="https://raw.githubusercontent.com/LIULIWANJIA/Systemctl_Protect/main/"
 
 echo "____________________________________"
 echo " "
