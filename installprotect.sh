@@ -94,6 +94,7 @@ function installprotect(){
     echo -e " "
     echo -e "现在可以通过指令手动测试进程运行情况"
     echo -e "bash /root/Systemctl_Protect/${servicename}_protect_core.sh"
+    bash /root/Systemctl_Protect/${servicename}_protect_core.sh
     echo -e " "
     echo -e " "
     
@@ -127,6 +128,18 @@ function uninstallprotect(){
     fi
 }
 
+function clear_all(){
+    
+    if test -a $RunPath/*_protect_core.sh;then
+    
+        echo -e "程序文件夹 $RunPath"
+        echo -e "存在未删除的守护进程"
+        echo -e "删除失败"
+    else
+        rm -f -r -v $RunPath
+        echo -e "程序文件夹 $RunPath 删除完成"
+    fi
+}
 
 function menu(){
     echo " "
@@ -141,6 +154,8 @@ function menu(){
     echo "2. 删除 Systemctl 守护进程"
     echo " "
     echo "3.列出所有守护"
+    echo " "
+    echo "0.清除程序文件夹"
     echo " "
     echo "____________________________________"
     echo " "
@@ -164,6 +179,9 @@ function menu(){
     	echo -e "以及LOG日志文件夹"
     	echo -e ""
     	echo -e ""
+    	;;
+    	0)
+    	clear_all
     	;;
     	*)
     	echo -e "${red_font}请输入正确数字 或者 Ctrl+C 终止脚本${color_suffix}"
